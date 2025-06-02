@@ -1,0 +1,300 @@
+body {
+  background-color: rgb(8, 3, 29);
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+ body {
+  min-height: 100vh;
+}
+.nav{
+     display: flex;
+    justify-content: space-evenly;
+}
+.home{
+    display: flex;
+    align-items: center;
+    color: white;
+    margin: 100px;
+      
+}
+.tab-pane {
+  min-height: unset !important;
+  height: auto !important;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.card{
+  width: 18rem;
+}
+.home-content h1{
+    color: aqua;
+}
+.home-content h4{
+  color: aqua;
+}
+.LumosNox p{
+color: white;
+margin-top: 10px;
+}
+.LumosNox{
+    display: flex;
+    justify-content: center;
+}
+.home-content p{
+    font-size: 15px;
+}
+.social-media {
+  display: flex;
+  gap: 1rem;
+  justify-content: left;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.icon-link {
+  background-color:rgb(8, 3, 29);
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+  color: white;
+}
+.containers{
+  max-width: 1000px;
+margin:20px auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.containers .hexagonarea.last{
+  transform: translateY(-45px);
+  margin-top: 25px;
+}
+.hexagon:hover{
+  transform: scale(1.08);
+}
+.containers .hexagonarea{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.containers .hexagonarea .hexagon{
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin:0 5px;
+  clip-path: polygon(0 25%,50% 0,100% 25%, 100% 75%,50% 100%,0 75%);
+  background: #3a0ca3;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: column;
+  cursor: pointer;
+  transition: .5s;
+}
+.hexagon{
+  gap: 20px;
+}
+.light-theme .containers .hexagonarea .hexagon{
+  background: rgb(255, 20, 110);
+}
+.allcards{
+  display: flex;
+  justify-content: space-evenly;
+}
+.icon-link:hover {
+  background-color: #007bff; 
+  color: #fff;
+}
+
+.btn{
+    color: aqua;
+   font-size: 20px;
+}
+.nav-link{
+    font-size: 20px;
+}
+.fade{
+    color: whitesmoke;
+}
+.light-theme {
+  background-color: #f0f4f8 !important;
+  color: #222 !important;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+.light-theme .home {
+  color: #222 !important;
+}
+
+.light-theme .home-content h1 {
+  color: #007bff !important;
+}
+.light-theme .ln{
+    color: black;
+}
+.light-theme .home-content p {
+  color: #555 !important;
+}
+.light-theme .icon-link {
+  background-color: #f0f4f8 !important;
+  color: #222 !important;
+  border: 1px solid #ccc;
+  transition: background-color 0.3s ease;
+}
+.light-theme .custom-shadow:hover {
+  box-shadow: 8px 8px 8px rgba(255, 0, 0, 0.6); }
+.custom-shadow:hover {
+  box-shadow: 8px 8px 8px hsl(185, 100%, 61%); }
+
+.light-theme .icon-link:hover {
+  background-color: #007bff !important;
+  color: #fff !important;
+}
+
+.light-theme .btn {
+  color: #007bff !important;
+}
+
+.light-theme .nav-link {
+  color: #222 !important;
+}
+.light-theme .fade{
+    color: #222;
+}
+.card:hover{
+border: 3px solid hsl(185, 100%, 61%);
+}
+.custom-carousel {
+  width: 80%;     
+  height: 600px;
+  max-width: 800px;     
+  border-radius: 10px;
+  overflow: hidden;
+  background-color:powderblue;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* optional shadow */
+}
+.carousel-item .carousel-caption{
+  height: 0px;
+}
+.carousel-item img{
+height: 300px;
+}
+.carousel-text{
+  color: black;
+}
+.img-fit {
+  height: 300px;          /* Fixed height */
+  object-fit:contain;      /* Ensures the image fits without distortion */
+}
+.btn-sm{
+  color: black;
+  border-color: black;
+}
+.contacts{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  border: 3px solid darkmagenta;
+}
+
+ .contacts-left{
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+ }
+ .contacts-right img{
+  height: 30rem;
+  width: 30rem;
+ }
+ .contacts-inputs{
+  margin: 10px;
+  border: 3px solid darkmagenta;
+  width: 500px;
+ }
+ .subtn{
+  width: 100px;
+  margin-left: 15px;
+  border: 3px solid darkmagenta;
+  border-radius: 15px;
+ }
+ .contact-left-title{
+  color: purple;
+ }
+.hr_line {
+  border: none;                 /* Remove default border */
+  height: 5px;                  /* Make it thick */
+  background-color: purple;     /* Set your desired color */
+  opacity: 1;                   /* Ensure full opacity */
+  width: 100%;                  /* Optional: full width */
+  margin: 20px 0;               /* Optional: spacing */
+}
+@media (max-width:1024px) and (min-width:600px){
+  .home-img img{
+    height: 300px;
+    width: 300px;
+  }
+  .card{
+    width: 15rem;
+  }
+  .card:hover{
+    border: 3px solid darkblue;
+ box-shadow: 8px 8px 8px darkblue;
+  }
+  .contacts-inputs{
+    width: 250px;
+  }
+}
+@media (max-width:600px){
+  .nav-item button{
+    font-size:15px;
+  }
+  .LumosNox p{
+    margin-top: 7px;
+  }
+  .home{
+    display: flex;
+    flex-direction: column;
+  }
+  .home-img{
+    height: 225px;
+    width: 225px;
+  }
+  .home-img img{
+    height: 200px;
+    width: 200px; 
+  }
+     .hexagon {
+    width: calc(33.33% - 10px);  /* 3 per row with spacing */
+    margin: 0;
+
+     }
+ .containers .hexagonarea .hexagon {
+    width: 30%;            /* fit 3 per row with small gap */
+    margin: 1% 1.5%;        /* spacing between them */
+    
+  }
+  .containers .hexagonarea.last {
+    transform: none;
+    margin-top: 15px;
+  }
+  .allcards{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 25%;
+  }
+  .custom-shadow{
+    width: 270px;
+  }
+  .custom-carousel{
+    height: 700px;
+  }
+  .contacts-right img{
+   display: none;
+  }
+}
+ 
